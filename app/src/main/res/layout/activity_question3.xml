@@ -7,33 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.st.personalitytest_1.question3">
+    tools:context="com.example.st.personalitytest_1.question3"
+    android:background="@drawable/background1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Qeustion3"
+        android:text="Do you enjoy working in public libraries?"
         android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp" />
+        android:layout_marginTop="59dp"
+        android:textAlignment="center" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="True"
+        android:text="Yes"
         android:id="@+id/btn3_true"
-        android:layout_below="@+id/textView4"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="71dp" />
+        android:textSize="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignEnd="@+id/btn3_false" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="False"
+        android:text="No"
         android:id="@+id/btn3_false"
+        android:textSize="30dp"
         android:layout_below="@+id/btn3_true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="66dp" />
+        android:layout_marginTop="32dp" />
 </RelativeLayout>

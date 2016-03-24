@@ -5,4 +5,17 @@
     <string name="title_activity_finalpage">finalpage</string>
     <string name="title_activity_question2">question2</string>
     <string name="title_activity_question3">question3</string>
+    <string name="title_activity_question4">question4</string>
+    <string name="title_activity_question5">question5</string>
+    <string name="title_activity_question6">question6</string>
+    <string name="title_activity_question7">question7</string>
+    <string name="title_activity_question8">question8</string>
+    <string name="title_activity_question9">question9</string>
+    <string name="title_activity_question10">question10</string>
+    <string name="title_activity_question11">question11</string>
+    <string name="title_activity_question12">question12</string>
+    <string name="title_activity_question13">question13</string>
+    <string name="title_activity_question14">question14</string>
+    <string name="title_activity_question15">question15</string>
+    <string name="title_activity_question16">question16</string>
 </resources>

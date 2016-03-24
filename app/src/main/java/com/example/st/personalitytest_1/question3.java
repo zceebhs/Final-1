@@ -15,20 +15,21 @@ public class question3 extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question2);
-        Bundle bundle = getIntent().getExtras();
-        int numberOfTrue = bundle.getInt("answer");
+        setContentView(R.layout.activity_question3);
+
+
         btn3_t = (Button) findViewById(R.id.btn3_true);
         btn3_f = (Button) findViewById(R.id.btn3_false);
 
         btn3_t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                int numberOfTrue = bundle.getInt("answer");
-                Intent intent = new Intent(question3.this, finalpage.class);
-                numberOfTrue = numberOfTrue + 1;
-                intent.putExtra("answer", numberOfTrue);
+                Bundle intent1 = getIntent().getExtras();
+                int[] numberOfAnswer = intent1.getIntArray("answer2");
+
+                Intent intent = new Intent (question3.this, question4.class);
+                numberOfAnswer[0]=numberOfAnswer[0] + 1;
+                intent.putExtra("answer3", numberOfAnswer);
                 startActivity(intent);
             }
 
@@ -36,12 +37,12 @@ public class question3 extends ActionBarActivity {
         btn3_f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                int numberOfTrue = bundle.getInt("answer");
-                int numberOfFalse = 0;
-                Intent intent = new Intent(question3.this, finalpage.class);
-                numberOfFalse = numberOfTrue;
-                intent.putExtra("answer", numberOfFalse);
+                Bundle intent1 = getIntent().getExtras();
+                int[] numberOfAnswer = intent1.getIntArray("answer2");
+
+                Intent intent = new Intent (question3.this, question4.class);
+                numberOfAnswer[1]=numberOfAnswer[1] + 1;
+                intent.putExtra("answer3", numberOfAnswer);
                 startActivity(intent);
             }
         });

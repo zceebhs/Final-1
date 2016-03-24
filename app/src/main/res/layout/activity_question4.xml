@@ -7,38 +7,36 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.st.personalitytest_1.question1"
-    android:background="@drawable/background1"
-    android:clickable="false">
+    tools:context="com.example.st.personalitytest_1.question4"
+    android:background="@drawable/background1">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Question1:If you were on a desert island for a day would you relish the peace and quiet?"
-        android:id="@+id/textView2"
+        android:text="Do you like to be around big crowds?"
+        android:id="@+id/textView5"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="59dp"
+        android:layout_marginTop="83dp"
         android:textAlignment="center" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Yes"
-        android:id="@+id/btn1_ture"
-        android:textSize="30dp"
+        android:id="@+id/btn4_true"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="No"
-        android:id="@+id/btn1_false"
+        android:id="@+id/btn4_false"
+        android:layout_marginTop="33dp"
         android:textSize="30dp"
-        android:layout_marginTop="40dp"
-        android:layout_below="@+id/btn1_ture"
-        android:layout_alignStart="@+id/btn1_ture" />
-
+        android:layout_below="@+id/btn4_true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>

@@ -28,7 +28,16 @@
             android:label="@string/title_activity_question2" />
         <activity
             android:name=".question3"
-            android:label="@string/title_activity_question3"></activity>
+            android:label="@string/title_activity_question3" />
+        <activity
+            android:name=".question4"
+            android:label="@string/title_activity_question4" />
+        <activity
+            android:name=".question5"
+            android:label="@string/title_activity_question5" />
+        <activity
+            android:name=".question6"
+            android:label="@string/title_activity_question6" />
     </application>
 
 </manifest>

@@ -16,19 +16,20 @@ public class question2 extends ActionBarActivity {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_question2);
-        Bundle bundle = getIntent().getExtras();
-        int numberOfTrue = bundle.getInt("answer");
+        
+
         btn2_t = (Button) findViewById(R.id.btn2_true);
         btn2_f = (Button) findViewById(R.id.btn2_false);
 
         btn2_t.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                int numberOfTrue = bundle.getInt("answer");
-                Intent intent = new Intent (question2.this, finalpage.class);
-                numberOfTrue=numberOfTrue + 1;
-                intent.putExtra("answer", numberOfTrue);
+                Bundle intent1 = getIntent().getExtras();
+                int[] numberOfAnswer = intent1.getIntArray("answer");
+
+                Intent intent = new Intent (question2.this, question3.class);
+
+                intent.putExtra("answer2", numberOfAnswer);
                 startActivity(intent);
             }
 
@@ -36,12 +37,12 @@ public class question2 extends ActionBarActivity {
         btn2_f.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Bundle bundle = getIntent().getExtras();
-                int numberOfTrue = bundle.getInt("answer");
-                int numberOfFalse=0;
-                Intent intent = new Intent (question2.this, finalpage.class);
-                numberOfFalse = numberOfTrue;
-                intent.putExtra("answer", numberOfFalse);
+                Bundle intent1 = getIntent().getExtras();
+                int[] numberOfAnswer = intent1.getIntArray("answer");
+
+                Intent intent = new Intent (question2.this, question3.class);
+                numberOfAnswer[1]=numberOfAnswer[1] + 1;
+                intent.putExtra("answer2", numberOfAnswer);
                 startActivity(intent);
             }
         });
