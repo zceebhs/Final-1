@@ -26,8 +26,9 @@
         android:layout_height="wrap_content"
         android:text="Back"
         android:id="@+id/btn_finish"
-        android:layout_centerVertical="true"
+        android:onClick="onClick"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="onClick" />
+        android:layout_marginBottom="66dp" />
 
 </RelativeLayout>
